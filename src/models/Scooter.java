@@ -2,27 +2,22 @@ package models;
 
 public class Scooter {
     public int year;
-    // encapsulation
-    // -> getters
-    // -> setters
+    // ENCAPSULATION
+    // 1/4 OOP Principles
+    // getters and setters are needed to access the data!
     private int id;
-    //add only after 1
     protected String name;
-    //add only after 3
     String colour;
 
-    //CONSTANTA
-    public static final int VITEZA_MAXIMA = 32;
+    //CONSTANT
+    public static final int MAXIMUM_SPEED = 30;
 
     //constructor
     public Scooter(int id) {
         this.id = id;
     }
 
-    //ENCAPSULATION
     public int getId() {
-        /*int i;
-        System.out.println(i);*/
         return this.id;
     }
 
