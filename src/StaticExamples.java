@@ -1,34 +1,40 @@
 // Metodele statice nu pot accesa variabile/metode ne-statice
-/*
-class StaticExamples {
-    int size = 42;
-
-    void go() {
-    }
-
-    static void doMore() {
-        int x = size;
-        go();
-    }
-}*/
+//public class StaticExamples {
+//    int size = 42;
+//
+//    void go() {
+//    }
+//
+//    static void doMore() {
+//        int x = size;
+//        go();
+//    }
+//
+//     public static void main(String[] args) {
+//        doMore();
+//    }
+//}
 
 // Variabilele si metodele ne-statice pot fi accesate doar de un obiect
-/*
-class StaticExamples {
-    int size = 42;
-
-    void go() {
-    }
-
-    static void doMore() {
-        Ex f = new Ex();
-        int x = f.size;
-        f.go();
-    }
-}*/
+//public class StaticExamples {
+//    int size = 42;
+//
+//    void go() {
+//    }
+//
+//    static void doMore() {
+//        StaticExamples staticExamples = new StaticExamples();
+//        int x = staticExamples.size;
+//        staticExamples.go();
+//    }
+//
+//    public static void main(String[] args) {
+//        doMore();
+//    }
+//}
 
 // Metodele statice pot accesa doar variabile/metode care la rândul lor sunt statice
-class StaticExamples {
+public class StaticExamples {
     static int count;
 
     static void woo() {
@@ -37,5 +43,9 @@ class StaticExamples {
     static void doMore() {
         woo();
         int x = count;
+    }
+
+    public static void main(String[] args) {
+        doMore();
     }
 }
