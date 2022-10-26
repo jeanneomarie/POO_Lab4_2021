@@ -11,10 +11,11 @@ public class Laborator3Problema5 {
         }
 
         System.out.println();
-        for (i = 0; i <= 64; i++)
-            if ((masca & (s << i)) != 0)
+        for (i = 0; i <= 64; i++) {
+            if ((masca & (s << i)) != 0) {
                 System.out.print(i + " ");
-
+            }
+        }
     }
 
     public static void main(String[] args) {
